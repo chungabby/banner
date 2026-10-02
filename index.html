@@ -4,15 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>It's Saturday — Mobile Banner</title>
-  <!-- 英文字體：Adobe Fonts「collier」 -->
-  <link rel="stylesheet" href="https://use.typekit.net/ezg8jxr.css" />
-  <!-- 中文字體：思源黑體（英文字體沒有的中文字會自動用這個） -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet" />
+  <!-- 英文字體：Adobe Fonts「collier」（按鈕用） -->
+  <link rel="stylesheet" href="https://use.typekit.net/ezg8jxr.css" />
   <style>
     /* ══════════ 設定（改這裡就好） ══════════ */
     :root {
-      --btn-font: "collier", 'Noto Sans TC', sans-serif;  /* 按鈕字體：英文 collier、中文思源黑體 */
-      --btn-weight: 400;                /* 按鈕粗細：collier 有 200 / 400 / 600 / 700 */
+      --btn-font: "collier", 'Noto Sans TC', sans-serif;  /* 按鈕：英文 collier、中文思源黑體 */
       --btn-bottom: 12%;                /* 按鈕距離底部的位置 */
       --shade: rgba(0, 0, 0, .35);      /* 底部漸層陰影，不要就改 transparent */
       --btn-text: #ffffff;              /* 按鈕文字 */
@@ -76,7 +74,7 @@
       color: var(--btn-text);
       font-family: var(--btn-font);
       font-size: 16px;
-      font-weight: var(--btn-weight);
+      font-weight: 400;
       line-height: 1.5;
       letter-spacing: 0.2em;
       text-indent: 0.2em;
@@ -96,10 +94,10 @@
 <body>
   <div class="banner">
     <!-- 底圖 → 換成你的圖片網址 -->
-    <img src="https://ik.imagekit.io/itssaturday/banner/20261003-banner-m.jpg" alt="台灣水泥香氛蠟燭" />
+    <img src="https://ik.imagekit.io/itssaturday/banner/20261003-banner-m-2.jpg" alt="台灣水泥香氛蠟燭" />
     <div class="shade"></div>
     <!-- 按鈕 → 換成你的文字與連結；target="_top" 讓點擊後整頁跳轉，不會只在框框裡開 -->
-    <a class="btn" href="https://its-saturday.com/page/all-product" target="_top">BEST SELLERS</a>
+    <a class="btn" href="https://its-saturday.com/item/class-202610-flower" target="_top">Best Sellers</a>
   </div>
 </body>
 </html>
